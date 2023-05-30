@@ -87,22 +87,22 @@ AI  or machine learning bias?
 that should be tested in addition?
 
 ## Readability
-- [ OK ] Is the code easy to understand? Yes.
-[ OK ] Which parts were confusing to you and why? Too many classes.
-[ OK ] Can the readability of the code be improved by
+- [ ] Is the code easy to understand? Yes.
+- [ ] Which parts were confusing to you and why? Too many classes.
+- [ ] Can the readability of the code be improved by
 smaller methods? Yes.
-[ OK ] Can the readability of the code be improved by
+- [ ] Can the readability of the code be improved by
 different function, method or variable names? Maybe.
-[ OK ] Is the code located in the right
+- [ ] Is the code located in the right
 file/folder/package? Yes.
 - [ ] Do you think certain methods should be
 restructured to have a more intuitive control
-flow?
-- [ ] Is the data flow understandable?
-- [ ] Are there redundant or outdated comments?
+flow? No.
+- [ ] Is the data flow understandable? Yes.
+- [ ] Are there redundant or outdated comments? No.
 - [ ] Could some comments convey the message
-better?
+better? Yes.
 - [ ] Would more comments make the code more
-understandable?
-- [ ] Could some comments be removed by making the code itself more readable?
-- [ ] Is there any commented-out code?
+understandable? Yes.
+- [ ] Could some comments be removed by making the code itself more readable? Yes.
+- [ ] Is there any commented-out code? No.
