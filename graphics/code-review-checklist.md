@@ -104,33 +104,18 @@ weaknesses? No.
 [ OK ] Might the code, or what it enables, lead to mental 
 and physical harm for (some) users? No.
 
-[ OK ] If the code adds or alters ways in which people 
-interact with each other, are appropriate measures
-in place to prevent/limit/report harassment or abuse? No.
-
-[ OK ] Does this change lead to an exclusion of a certain
-group of people or users? No.
-
-[ OK ] Does this code change introduce unjust impact on people, 
-particularly those related to sensitive characteristics such as
-race, ethnicity, gender, nationality, income, sexual orientation, ability, 
-and political or religious belief? No.
-
-[ OK ] Does this code change introduce any algorithm, 
-AI  or machine learning bias? No.
-
 
 ## Testing and Testability
 [ OK ] Is the code testable? Yes.
 
 [ OK ] Has the code change? No.
 
-[ OK ] Have automated tests been added, or have related ones been updated to cover the change? Yes.
+[ ? ] Have automated tests been added, or have related ones been updated to cover the change? No.
 
 [ OK ] Do the existing tests reasonably cover the code change (unit/integration/system tests)? Yes.
 
 [ OK ] Are there some test cases, input or edge cases
-that should be tested in addition? Yes.
+that should be tested in addition? No.
 
 ## Readability
 [ OK ] Is the code easy to understand? Yes.
