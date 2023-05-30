@@ -10,31 +10,49 @@
 [ ? ] Could an additional framework, API, library, or service improve the solution?
   - Better GUI
  
-- [ ] Is the code at the right abstraction level?
-- [ ] Is the code modular enough?
-- [ ] Can a better solution be found in terms of maintainability, readability, performance, or security?
-- [ ] Does similar functionality already exist in the codebase? If yes, why isn’t it reused?
-- [ ] Are there any best practices, design patterns or language-specific patterns that could substantially improve this code? 
-- [ ] Does this code adhere to Object-Oriented Analysis and Design Principles, like the Single Responsibility Principle, Open-Close Principle, Liskov Substitution Principle, Interface Segregation, or Dependency Injection?
+[ OK ] Is the code at the right abstraction level?
+
+[ OK ] Is the code modular enough?
+
+[ OK ] Can a better solution be found in terms of maintainability, readability, performance, or security?
+
+[ ? ] Does similar functionality already exist in the codebase? If yes, why isn’t it reused?
+      - similar functionality, only differences is object type (same parent)
+
+[ ? ] Are there any best practices, design patterns or language-specific patterns that could substantially improve this code? 
+      - DRY: 
+          - Cape, Bag, Axe, Gloves: simmilar code
+          - Aminoacid, Nucleotide: simmilar code
+
+[ OK ] Does this code adhere to Object-Oriented Analysis and Design Principles, like the Single Responsibility Principle, Open-Close Principle, Liskov Substitution Principle, Interface Segregation, or Dependency Injection?
 
 ## Logic Errors and Bugs
-- [ ] Can you think of any use case in which the
+
+[ OK ] Can you think of any use case in which the
 code does not behave as intended?
-- [ ] Can you think of any inputs or external events
+
+[ OK ] Can you think of any inputs or external events
 that could break the code?
 
 ## Error Handling and Logging
-- [ ] Is error handling done the correct way?
-- [ ] Should any logging or debugging information
+
+[ OK ] Is error handling done the correct way?
+
+[ OK ] Should any logging or debugging information
 be added or removed?
-- [ ] Are error messages user-friendly?
-- [ ] Are there enough log events and are they
+
+[ - ] Are error messages user-friendly?
+      - Error message appears only in console
+
+[ ? ] Are there enough log events and are they
 written in a way that allows for easy
 debugging?
+        - No logging event, but not needed
 
 ## Dependencies
-- [ ] Were updates to documentation, configuration, or readme files made as required by this change?
-- [ ] Are there any potential impacts on other parts of the system or backward compatibility?
+[ OK ] Were updates to documentation, configuration, or readme files made as required by this change?
+
+[ OK ] Are there any potential impacts on other parts of the system or backward compatibility?
 
 ## Security and Data Privacy
 - [ ] Does the code introduce any security vulnerabilities?
