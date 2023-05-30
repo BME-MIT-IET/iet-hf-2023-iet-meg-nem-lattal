@@ -58,21 +58,28 @@ debugging?
 
 ## Security and Data Privacy
 [ OK ] Does the code introduce any security vulnerabilities? No.
+
 [ OK ] Are authorization and authentication handled correctly? Not needed.
+
 [ OK ] Is (user) input validated, sanitized, and escaped 
 to prevent security attacks such as cross-site 
 scripting or SQL injection? Not needed.
+
 [ OK ] Is sensitive data like user data or credit card
 information securely handled and stored? Not needed.
+
 [ OK ] Is the right encryption used? Not needed.
+
 [ OK ] Does this code change reveal any secret
 information like keys, passwords, or usernames? No.
+
 [ OK ] Is data retrieved from external APIs or libraries
 checked for security issues? Not needed.
 
 ## Performance
 [ OK ] Do you think this code change decreases
 system performance? Yes.
+
 [ OK ] Do you see any potential to improve the
 performance of the code significantly? Yes.
 
@@ -80,47 +87,65 @@ performance of the code significantly? Yes.
 ## Usability and Accessibility
 [ OK ] Is the proposed solution well-designed from a
 usability perspective? Yes.
+
 [ OK ] Is the API well documented? Yes.
+
 [ OK ] Is the proposed solution (UI) accessible? Yes.
+
 [ OK ] Is the API/UI intuitive to use? Yes.
 
 ## Ethics and Morality
 [ OK ] Does this change make use of user data in a way that 
 might raise privacy concerns? No.
+
 [ OK ] Does the change exploit behavioral patterns or human
 weaknesses? No.
+
 [ OK ] Might the code, or what it enables, lead to mental 
 and physical harm for (some) users? No.
+
 [ OK ] If the code adds or alters ways in which people 
 interact with each other, are appropriate measures
 in place to prevent/limit/report harassment or abuse? No.
+
 [ OK ] Does this change lead to an exclusion of a certain
 group of people or users? No.
+
 [ OK ] Does this code change introduce unjust impact on people, 
 particularly those related to sensitive characteristics such as
 race, ethnicity, gender, nationality, income, sexual orientation, ability, 
 and political or religious belief? No.
+
 [ OK ] Does this code change introduce any algorithm, 
 AI  or machine learning bias? No.
 
 
 ## Testing and Testability
 [ OK ] Is the code testable? Yes.
+
 [ OK ] Has the code change? No.
+
 [ OK ] Have automated tests been added, or have related ones been updated to cover the change? Yes.
+
 [ OK ] Do the existing tests reasonably cover the code change (unit/integration/system tests)? Yes.
+
 [ OK ] Are there some test cases, input or edge cases
 that should be tested in addition? Yes.
 
 ## Readability
 [ OK ] Is the code easy to understand? Yes.
+
 [ OK ] Which parts were confusing to you and why? Too many classes.
+
 [ OK ] Can the readability of the code be improved by
 smaller methods? Yes.
+
 [ OK ] Can the readability of the code be improved by
 different function, method or variable names? Yes.
+
 [ OK ] Is the code located in the right
 file/folder/package? Yes.
+
 [ OK ] Do you think certain methods should be
 restructured to have a more intuitive control
 flow? No.
