@@ -46,45 +46,45 @@ checked for security issues?
 
 ## Performance
 - [ ] Do you think this code change decreases
-system performance?
+system performance? Yes.
 - [ ] Do you see any potential to improve the
-performance of the code significantly?
+performance of the code significantly? Yes.
 
 
 ## Usability and Accessibility
 - [ ] Is the proposed solution well-designed from a
-usability perspective?
-- [ ] Is the API well documented?
-- [ ] Is the proposed solution (UI) accessible?
-- [ ] Is the API/UI intuitive to use?
+usability perspective? Yes.
+- [ ] Is the API well documented? Yes.
+- [ ] Is the proposed solution (UI) accessible? Yes.
+- [ ] Is the API/UI intuitive to use? Yes.
 
 ## Ethics and Morality
 - [ ] Does this change make use of user data in a way that 
-might raise privacy concerns?
+might raise privacy concerns? No.
 - [ ] Does the change exploit behavioral patterns or human
-weaknesses? 
+weaknesses? No.
 - [ ] Might the code, or what it enables, lead to mental 
-and physical harm for (some) users?
+and physical harm for (some) users? No.
 - [ ] If the code adds or alters ways in which people 
 interact with each other, are appropriate measures
-in place to prevent/limit/report harassment or abuse?
+in place to prevent/limit/report harassment or abuse? No.
 - [ ] Does this change lead to an exclusion of a certain
-group of people or users?
+group of people or users? No.
 - [ ] Does this code change introduce unjust impact on people, 
 particularly those related to sensitive characteristics such as
 race, ethnicity, gender, nationality, income, sexual orientation, ability, 
-and political or religious belief?
+and political or religious belief? No.
 - [ ] Does this code change introduce any algorithm, 
-AI  or machine learning bias?
+AI  or machine learning bias? No.
 
 
 ## Testing and Testability
-- [ ] Is the code testable?
-- [ ] Has the code change
-- [ ] Have automated tests been added, or have related ones been updated to cover the change?
-- [ ] Do the existing tests reasonably cover the code change (unit/integration/system tests)? 
+- [ ] Is the code testable? Yes.
+- [ ] Has the code change? No.
+- [ ] Have automated tests been added, or have related ones been updated to cover the change? Yes.
+- [ ] Do the existing tests reasonably cover the code change (unit/integration/system tests)? Yes.
 - [ ] Are there some test cases, input or edge cases
-that should be tested in addition?
+that should be tested in addition? Yes.
 
 ## Readability
 - [ ] Is the code easy to understand? Yes.
