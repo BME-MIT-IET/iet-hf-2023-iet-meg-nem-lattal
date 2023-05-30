@@ -87,7 +87,7 @@ AI  or machine learning bias?
 that should be tested in addition?
 
 ## Readability
-[ OK ] Is the code easy to understand? Yes.
+- [ OK ] Is the code easy to understand? Yes.
 [ OK ] Which parts were confusing to you and why? Too many classes.
 [ OK ] Can the readability of the code be improved by
 smaller methods? Yes.
