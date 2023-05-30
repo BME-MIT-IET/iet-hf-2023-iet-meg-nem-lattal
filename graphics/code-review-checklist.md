@@ -1,5 +1,5 @@
 ## Implementation
-- [  ] Does this code change accomplish what it is supposed to do?
+- [ ] Does this code change accomplish what it is supposed to do?
 - [ ] Can this solution be simplified?
 - [ ] Does this change add unwanted compile-time or run-time dependencies?
 - [ ] Is a framework, API, library, or service used that should not be used?
@@ -87,14 +87,14 @@ AI  or machine learning bias?
 that should be tested in addition?
 
 ## Readability
-- [ ] Is the code easy to understand?
-- [ ] Which parts were confusing to you and why?
-- [ ] Can the readability of the code be improved by
-smaller methods?
-- [ ] Can the readability of the code be improved by
-different function, method or variable names?
-- [ ] Is the code located in the right
-file/folder/package?
+[ OK ] Is the code easy to understand? Yes.
+[ OK ] Which parts were confusing to you and why? Too many classes.
+[ OK ] Can the readability of the code be improved by
+smaller methods? Yes.
+[ OK ] Can the readability of the code be improved by
+different function, method or variable names? Maybe.
+[ OK ] Is the code located in the right
+file/folder/package? Yes.
 - [ ] Do you think certain methods should be
 restructured to have a more intuitive control
 flow?
