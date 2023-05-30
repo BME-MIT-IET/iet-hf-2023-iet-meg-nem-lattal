@@ -1,4 +1,5 @@
 ## Implementation
+
 [ OK ] Does this code change accomplish what it is supposed to do?
 
 [ OK ] Can this solution be simplified?
@@ -25,6 +26,7 @@
           - Aminoacid, Nucleotide: simmilar code
 
 [ OK ] Does this code adhere to Object-Oriented Analysis and Design Principles, like the Single Responsibility Principle, Open-Close Principle, Liskov Substitution Principle, Interface Segregation, or Dependency Injection?
+
 
 ## Logic Errors and Bugs
 
@@ -55,78 +57,84 @@ debugging?
 [ OK ] Are there any potential impacts on other parts of the system or backward compatibility?
 
 ## Security and Data Privacy
-- [ ] Does the code introduce any security vulnerabilities?
-- [ ] Are authorization and authentication handled correctly?
+- [ ] Does the code introduce any security vulnerabilities? No.
+- [ ] Are authorization and authentication handled correctly? Not needed.
 - [ ] Is (user) input validated, sanitized, and escaped 
 to prevent security attacks such as cross-site 
-scripting or SQL injection?
+scripting or SQL injection? Not needed.
 - [ ] Is sensitive data like user data or credit card
-information securely handled and stored?
-- [ ] Is the right encryption used?
+information securely handled and stored? Not needed.
+- [ ] Is the right encryption used? Not needed.
 - [ ] Does this code change reveal any secret
-information like keys, passwords, or usernames?
+information like keys, passwords, or usernames? No.
 - [ ] Is data retrieved from external APIs or libraries
-checked for security issues?
+checked for security issues? Not needed.
 
 ## Performance
 - [ ] Do you think this code change decreases
-system performance?
+system performance? Yes.
 - [ ] Do you see any potential to improve the
-performance of the code significantly?
+performance of the code significantly? Yes.
 
 
 ## Usability and Accessibility
 - [ ] Is the proposed solution well-designed from a
-usability perspective?
-- [ ] Is the API well documented?
-- [ ] Is the proposed solution (UI) accessible?
-- [ ] Is the API/UI intuitive to use?
+usability perspective? Yes.
+- [ ] Is the API well documented? Yes.
+- [ ] Is the proposed solution (UI) accessible? Yes.
+- [ ] Is the API/UI intuitive to use? Yes.
 
 ## Ethics and Morality
 - [ ] Does this change make use of user data in a way that 
-might raise privacy concerns?
+might raise privacy concerns? No.
 - [ ] Does the change exploit behavioral patterns or human
-weaknesses? 
+weaknesses? No.
 - [ ] Might the code, or what it enables, lead to mental 
-and physical harm for (some) users?
+and physical harm for (some) users? No.
 - [ ] If the code adds or alters ways in which people 
 interact with each other, are appropriate measures
-in place to prevent/limit/report harassment or abuse?
+in place to prevent/limit/report harassment or abuse? No.
 - [ ] Does this change lead to an exclusion of a certain
-group of people or users?
+group of people or users? No.
 - [ ] Does this code change introduce unjust impact on people, 
 particularly those related to sensitive characteristics such as
 race, ethnicity, gender, nationality, income, sexual orientation, ability, 
-and political or religious belief?
+and political or religious belief? No.
 - [ ] Does this code change introduce any algorithm, 
-AI  or machine learning bias?
+AI  or machine learning bias? No.
 
 
 ## Testing and Testability
-- [ ] Is the code testable?
-- [ ] Has the code change
-- [ ] Have automated tests been added, or have related ones been updated to cover the change?
-- [ ] Do the existing tests reasonably cover the code change (unit/integration/system tests)? 
+- [ ] Is the code testable? Yes.
+- [ ] Has the code change? No.
+- [ ] Have automated tests been added, or have related ones been updated to cover the change? Yes.
+- [ ] Do the existing tests reasonably cover the code change (unit/integration/system tests)? Yes.
 - [ ] Are there some test cases, input or edge cases
-that should be tested in addition?
+that should be tested in addition? Yes.
 
 ## Readability
-- [ ] Is the code easy to understand?
-- [ ] Which parts were confusing to you and why?
+- [ ] Is the code easy to understand? Yes.
+- [ ] Which parts were confusing to you and why? Too many classes.
 - [ ] Can the readability of the code be improved by
-smaller methods?
+smaller methods? Yes.
 - [ ] Can the readability of the code be improved by
-different function, method or variable names?
+different function, method or variable names? Yes.
 - [ ] Is the code located in the right
-file/folder/package?
+file/folder/package? Yes.
 - [ ] Do you think certain methods should be
 restructured to have a more intuitive control
-flow?
-- [ ] Is the data flow understandable?
-- [ ] Are there redundant or outdated comments?
+flow? No.
+- [ ] Is the data flow understandable? Yes.
+- [ ] Are there redundant or outdated comments? No.
 - [ ] Could some comments convey the message
-better?
+better? Yes.
 - [ ] Would more comments make the code more
+
 understandable?
 - [ ] Could some comments be removed by making the code itself more readable?
 - [ ] Is there any commented-out code?
+
+understandable? Yes.
+- [ ] Could some comments be removed by making the code itself more readable? Yes.
+- [ ] Is there any commented-out code? No.
+
