@@ -149,10 +149,14 @@ file/folder/package? Yes.
 [ OK ] Do you think certain methods should be
 restructured to have a more intuitive control
 flow? No.
+
 [ OK ] Is the data flow understandable? Yes.
+
 [ OK ] Are there redundant or outdated comments? No.
+
 [ OK ] Could some comments convey the message
 better? Yes.
+
 [ OK ] Would more comments make the code more
 
 understandable? No.
