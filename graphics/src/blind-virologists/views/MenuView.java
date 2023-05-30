@@ -76,6 +76,7 @@ public class MenuView{
      */
     public void makeButtonInteract(){
         JButton buttonInteract = new JButton("Interact");
+        buttonInteract.setName("interact");
         buttonInteract.setBackground(Color.lightGray);
         buttonInteract.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonInteract.addActionListener(actionEvent -> {
@@ -90,6 +91,7 @@ public class MenuView{
      */
     public void makeButtonCraft(){
         JButton buttonCraft = new JButton("Craft");
+        buttonCraft.setName("craft");
         buttonCraft.setBackground(Color.lightGray);
         buttonCraft.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonCraft.addActionListener(actionEvent -> {
@@ -110,6 +112,7 @@ public class MenuView{
      */
     public void makeButtonUseAgent(){
         JButton buttonUseAgent = new JButton("Use agent");
+        buttonUseAgent.setName("agent");
         buttonUseAgent.setBackground(Color.lightGray);
         buttonUseAgent.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonUseAgent.addActionListener(actionEvent -> {
@@ -132,6 +135,7 @@ public class MenuView{
      */
     public void makeButtonSteal(){
         JButton buttonSteal = new JButton("Steal");
+        buttonSteal.setName("steal");
         buttonSteal.setBackground(Color.lightGray);
         buttonSteal.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonSteal.addActionListener(actionEvent -> {
@@ -147,6 +151,7 @@ public class MenuView{
      */
     public void makeButtonEquip(){
         JButton buttonEquip = new JButton("Equip");
+        buttonEquip.setName("equip");
         buttonEquip.setBackground(Color.lightGray);
         buttonEquip.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonEquip.addActionListener(actionEvent -> {
@@ -167,6 +172,7 @@ public class MenuView{
      */
     public void makeButtonUnequip(){
         JButton buttonUnequip = new JButton("Unequip");
+        buttonUnequip.setName("buttonUnequip");
         buttonUnequip.setBackground(Color.lightGray);
         buttonUnequip.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonUnequip.addActionListener(actionEvent -> {
@@ -187,6 +193,7 @@ public class MenuView{
      */
     public void makeButtonDrop(){
         JButton buttonDrop = new JButton("Drop");
+        buttonDrop.setName("drop");
         buttonDrop.setBackground(Color.lightGray);
         buttonDrop.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonDrop.addActionListener(actionEvent -> {
@@ -207,6 +214,7 @@ public class MenuView{
      */
     public void makeButtonNext(){
         JButton buttonNext = new JButton("Next");
+        buttonNext.setName("next");
         buttonNext.setBackground(Color.lightGray);
         buttonNext.setPreferredSize(new Dimension(buttonWidth, buttonHeight));
         buttonNext.addActionListener(actionEvent -> {
@@ -248,12 +256,14 @@ public class MenuView{
         panelCodes.setBackground(Color.lightGray);
         panelCodes.setPreferredSize(new Dimension(panelWidth, panelHeight));
         JLabel l = new JLabel("Codes");
+        l.setName("codes");
         l.setBackground(Color.gray);
         l.setOpaque(true);
         panelCodes.add(l);
         try{
         for (int i = 0; i < actualVirologist.getCodes().size(); i++) {
             JLabel jl = new JLabel(actualVirologist.getCodes().get(i).toString());
+            jl.setName("jl"+i);
             panelCodes.add(jl);
         }
         } catch (Exception e) {
@@ -510,6 +520,7 @@ public class MenuView{
     public void makeDialogEquip(){
         dialogEquip = new JDialog();
         dialogEquip.setTitle("Equip");
+        dialogEquip.setName("equip");
         dialogEquip.setSize(500, 300);
         dialogEquip.setVisible(true);
         dialogEquip.add(new JLabel("Choose an equipment!"), BorderLayout.NORTH);
