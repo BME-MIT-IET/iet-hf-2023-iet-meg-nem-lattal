@@ -1,9 +1,15 @@
 ## Implementation
-- [  ] Does this code change accomplish what it is supposed to do?
-- [ ] Can this solution be simplified?
-- [ ] Does this change add unwanted compile-time or run-time dependencies?
-- [ ] Is a framework, API, library, or service used that should not be used?
-- [ ] Could an additional framework, API, library, or service improve the solution?
+[ OK ] Does this code change accomplish what it is supposed to do?
+
+[ OK ] Can this solution be simplified?
+
+[ OK ] Does this change add unwanted compile-time or run-time dependencies?
+
+[ OK ] Is a framework, API, library, or service used that should not be used?
+
+[ ? ] Could an additional framework, API, library, or service improve the solution?
+  - Better GUI
+ 
 - [ ] Is the code at the right abstraction level?
 - [ ] Is the code modular enough?
 - [ ] Can a better solution be found in terms of maintainability, readability, performance, or security?
