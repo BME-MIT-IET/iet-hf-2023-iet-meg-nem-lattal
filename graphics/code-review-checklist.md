@@ -92,7 +92,7 @@ that should be tested in addition?
 - [ ] Can the readability of the code be improved by
 smaller methods? Yes.
 - [ ] Can the readability of the code be improved by
-different function, method or variable names? Maybe.
+different function, method or variable names? Yes.
 - [ ] Is the code located in the right
 file/folder/package? Yes.
 - [ ] Do you think certain methods should be
