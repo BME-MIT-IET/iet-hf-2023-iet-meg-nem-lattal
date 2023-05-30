@@ -31,18 +31,18 @@ debugging?
 - [ ] Are there any potential impacts on other parts of the system or backward compatibility?
 
 ## Security and Data Privacy
-- [ ] Does the code introduce any security vulnerabilities?
-- [ ] Are authorization and authentication handled correctly?
+- [ ] Does the code introduce any security vulnerabilities? No.
+- [ ] Are authorization and authentication handled correctly? Not needed.
 - [ ] Is (user) input validated, sanitized, and escaped 
 to prevent security attacks such as cross-site 
-scripting or SQL injection?
+scripting or SQL injection? Not needed.
 - [ ] Is sensitive data like user data or credit card
-information securely handled and stored?
-- [ ] Is the right encryption used?
+information securely handled and stored? Not needed.
+- [ ] Is the right encryption used? Not needed.
 - [ ] Does this code change reveal any secret
-information like keys, passwords, or usernames?
+information like keys, passwords, or usernames? No.
 - [ ] Is data retrieved from external APIs or libraries
-checked for security issues?
+checked for security issues? Not needed.
 
 ## Performance
 - [ ] Do you think this code change decreases
