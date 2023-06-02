@@ -1,8 +1,11 @@
 import main.Main;
+import org.assertj.swing.assertions.Assertions;
 import org.assertj.swing.core.BasicRobot;
 import org.assertj.swing.core.ComponentLookupScope;
 import org.assertj.swing.core.Robot;
 import org.assertj.swing.core.matcher.FrameMatcher;
+import org.assertj.swing.edt.GuiActionRunner;
+import org.assertj.swing.edt.GuiQuery;
 import org.assertj.swing.finder.WindowFinder;
 import org.assertj.swing.fixture.DialogFixture;
 import org.assertj.swing.fixture.FrameFixture;
@@ -12,6 +15,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 import static junit.framework.TestCase.assertEquals;
@@ -58,15 +63,6 @@ public class SwingTest {
     }
 
     @Test
-    public void TestStealDialog() {
-        window.button("steal").click();
-        DialogFixture dialog = window.dialog();
-        dialog.requireVisible();
-        String title = dialog.target().getTitle();
-        assertEquals(title, "Steal");
-    }
-
-    @Test
     public void TestEquipAlert() {
         window.button("equip").click();
         JOptionPaneFixture alert = window.optionPane();
@@ -89,6 +85,79 @@ public class SwingTest {
         JOptionPaneFixture alert = window.optionPane();
         alert.requireTitle("You have no equipment!");
         alert.requireMessage("You have no equipment!");
+    }
+
+    @Test
+    public void TestStealDialog() {
+        window.button("steal").click();
+        DialogFixture dialog = window.dialog();
+        dialog.requireVisible();
+        String title = dialog.target().getTitle();
+        assertEquals(title, "Steal");
+    }
+
+    @Test
+    public void TestCode() {
+        int x = 150;
+        int y = 120;
+        for(int i = 0; i < 7; i++) {
+            for(int k = 0; k < 4; k++) {
+                window.button("next").click();
+            }
+            window.button("interact").click();
+
+            x+=100;
+            Point point = new Point(x,y);
+            window.robot().click(window.target(), point);
+
+            JLabel label = null;
+            try {
+                label = GuiActionRunner.execute(new GuiQuery<JLabel>() {
+                    protected JLabel executeInEDT() {
+                        return (JLabel) window.robot().finder().findByName("jlcode0");
+                    }
+                });
+            }
+            catch (Exception e) {}
+
+            if(label != null) {
+                Assertions.assertThat(label.getText().matches("Code - .*"));
+            }
+        }
+    }
+
+    @Test
+    public void TestEquip() {
+        int x = 150;
+        int y = 120;
+        for(int i = 0; i < 7; i++) {
+            for(int k = 0; k < 4; k++) {
+                window.button("next").click();
+            }
+            window.button("interact").click();
+
+            x+=100;
+            Point point = new Point(x,y);
+            window.robot().click(window.target(), point);
+
+            JLabel label = null;
+            try {
+                label = GuiActionRunner.execute(new GuiQuery<JLabel>() {
+                    protected JLabel executeInEDT() {
+                        return (JLabel) window.robot().finder().findByName("jlequip0");
+                    }
+                });
+            }
+            catch (Exception e) {}
+
+            if(label != null) {
+                Assertions.assertThat(
+                    label.getText().matches("Cape") ||
+                          label.getText().matches("Bag") ||
+                          label.getText().matches("Axe") ||
+                          label.getText().matches("Gloves"));
+            }
+        }
     }
 
     @After

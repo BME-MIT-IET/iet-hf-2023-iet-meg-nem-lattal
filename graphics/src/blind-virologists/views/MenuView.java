@@ -263,7 +263,7 @@ public class MenuView{
         try{
         for (int i = 0; i < actualVirologist.getCodes().size(); i++) {
             JLabel jl = new JLabel(actualVirologist.getCodes().get(i).toString());
-            jl.setName("jl"+i);
+            jl.setName("jlcode"+i);
             panelCodes.add(jl);
         }
         } catch (Exception e) {
@@ -288,6 +288,7 @@ public class MenuView{
         try {
             for (int i = 0; i < actualVirologist.getAgents().size(); i++) {
                 JLabel jl = new JLabel(actualVirologist.getAgents().get(i).toString());
+                jl.setName("jlagent"+i);
                 panelAgents.add(jl);
             }
         } catch (Exception e) {
@@ -313,6 +314,7 @@ public class MenuView{
         try {
             for (int i = 0; i < actualVirologist.getEquipments().size(); i++) {
                 JLabel jl = new JLabel(actualVirologist.getEquipments().get(i).toString());
+                jl.setName("jlequip"+i);
                 panelEquipment.add(jl);
             }
         } catch (Exception e) {
