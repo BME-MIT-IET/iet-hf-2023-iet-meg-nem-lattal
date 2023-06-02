@@ -12,7 +12,7 @@ Tekintve, hogy a térkép minden különböző indításakor a játéknak random
 Teszteli, hogy amennyiben a játékos megszerzett egy kódot a térképen megfelelő mezőről, akkor megjelenik-e a játékablakon a jobboldalt a megfelelő felirat tájékoztatva a játékost arról, hogy ő valóban birtokában van a kódnak.
 Ez olyan módon történik, hogy az első játákos minden alkalommal jobbra lépked a pályán, és amennyiben az assertj segítségével észlelni lehet, egy jobboldalt megjelenő plusz JLabelt, akkor ellenőrzöm, hogy a label a megfelelő Code stringgel kezdődik-e.
 
-## TestStealDialog
+### TestStealDialog
 Teszteli, hogy a játékos amennyiben a Steal gombot nyomja meg, megjelenik-e egy dialógusablak, amiben kiválaszhatja azt a játékost, akitől lopni szeretne.
 
 Az következő négy teszt feladata tesztelni, hogy a játékosok figyelmeztetve vannak-e arról, hogy ha a megfelelő eszközök hiányában próbálnak a gombokkal elérhető műveletet végrehajtani, akkor a megfelelő alertekkel tájékoztatva vannak-e a cselekedet sikertelenségéről.
